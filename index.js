@@ -1,2 +1,3 @@
-import game from './js/gameClass.js';
+import * from './js/index.js';
 export const game = new Game();
+registerKeyPresses();

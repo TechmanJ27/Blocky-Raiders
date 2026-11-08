@@ -1,5 +1,13 @@
 export default class Inventory {
-  
+  inventory = [];
+  constructor() {
+    for (i = 0; i < 20; i++) {
+      this.inventory.push(null);
+    }
+  }
+  fetch() {
+    return this.inventory;
+  }
 }
 
 export const SLOTS = Object.freeze({

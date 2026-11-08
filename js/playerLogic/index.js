@@ -1,1 +1,1 @@
-
+export * from './playerClass.js';

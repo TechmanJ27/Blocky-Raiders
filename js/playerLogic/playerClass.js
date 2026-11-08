@@ -1,4 +1,4 @@
-export class Player {
+export default class Player {
   public spawnX;
   public spawnY;
   
@@ -23,7 +23,7 @@ export class Player {
   };
 
   this.respawn = () => {
-      this.clearInventory().exclude(SLOTS.BACKPACK);
+      this.inventory.clearBackpack();
       this.x = this.spawnX;
       this.y = this.spawnY;
   };
@@ -36,30 +36,3 @@ export class Player {
       console.log(`${this.name} moved right!`);
   };
 }
-
-const SLOTS = Object.freeze({
-    HEAD: 0,
-    CHEST: 1,
-    LEGGINGS: 2,
-    BOOTS: 3,
-    SHIELD: 4,
-    HOTBAR: Object.freeze({
-      ONE: 5,
-      TWO: 6,
-      THREE: 7,
-      FOUR: 8,
-      FIVE: 9,
-      SIX: 10,
-    }),
-    BACKPACK: Object.freeze({
-      ONE: 11,
-      TWO: 12,
-      THREE: 13,
-      FOUR: 14,
-      FIVE: 15,
-      SIX: 16,
-      SEVEN: 17,
-      EIGHT: 18,
-      NINE: 19
-    })
-});

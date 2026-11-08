@@ -1,2 +1,2 @@
-import startGame from './js/startGame.js';
-startGame();
+import game from './js/gameClass.js';
+export const game = new Game();

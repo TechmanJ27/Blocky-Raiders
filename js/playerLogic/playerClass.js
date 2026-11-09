@@ -1,3 +1,5 @@
+import {Inventory} from './inventoryClass.js';
+
 export default class Player {
   public spawnX;
   public spawnY;
@@ -5,6 +7,7 @@ export default class Player {
   constructor(name, gender) {
     this.name = name;
     this.gender = gender;
+    this.inventory = new Inventory();
   }
 
   this.move = {

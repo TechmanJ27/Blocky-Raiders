@@ -1,7 +1,7 @@
 export default renderBackdrop(levelId, playerX) {
   const image = new Image();
   
-  image.src = `../../assets/backdrops/${levelId}.png`;
+  image.src = `./assets/backdrops/${levelId}.png`;
 
   const canvas = document.getElementById("canvas");
 

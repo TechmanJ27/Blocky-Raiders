@@ -1,6 +1,6 @@
 export default class Game {
   level = "tutorial-word";
-  player = new Player();
+  // player = new Player();
   
   constructor() {
     

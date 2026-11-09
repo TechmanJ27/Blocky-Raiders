@@ -29,10 +29,8 @@ export default class Player {
   };
 
   this.respawn.clear = () => {
-      console.log(`${this.name} jumped!`);
+      this.inventory.clear();
   };
 
-  this.move.right = () => {
-      console.log(`${this.name} moved right!`);
-  };
+  
 }

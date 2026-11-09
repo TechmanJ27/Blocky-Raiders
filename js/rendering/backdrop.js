@@ -1,4 +1,4 @@
-export default renderBackdrop(ctx, levelId, playerX) {
+export default renderBackdrop(levelId, playerX) {
   const image = new Image();
   
   image.src = `./assets/backdrops/${levelId}.png`;

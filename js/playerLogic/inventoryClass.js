@@ -15,6 +15,7 @@ export default class Inventory {
   }
   clearBackpack() {
     for (const slotId in SLOTS.BACKPACK) {
+      if (slotId == 21) continue;
       this.inventory[slotId] = null;
     }
   }

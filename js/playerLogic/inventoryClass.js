@@ -8,6 +8,16 @@ export default class Inventory {
   fetch() {
     return this.inventory;
   }
+  clear() {
+    for (i = 0; i < 20; i++) {
+      this.inventory[i] = null;
+    }
+  }
+  clearBackpack() {
+    for (const slot in BACKPACK) {
+      this.inventory.push(null);
+    }
+  }
 }
 
 export const SLOTS = Object.freeze({

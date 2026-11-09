@@ -1,9 +1,10 @@
 export default class Game {
-  level = "tutorial-word";
   // player = new Player();
   
   constructor() {
-    
+    this.level = {
+      id: "tutorial-word"
+    };
   }
 
   getLevel() {

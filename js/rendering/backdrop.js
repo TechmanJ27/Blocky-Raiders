@@ -5,7 +5,7 @@ export default renderBackdrop(levelId, playerX) {
 
   const canvas = document.getElementById("canvas");
 
-  const ctx = canvas.getContext();
+  const ctx = canvas.getContext("2d");
 
   image.addEventListener("load", (e) => {
     ctx.drawImage(image, 0 + playerX * 0.8, 0);

@@ -14,8 +14,8 @@ export default class Inventory {
     }
   }
   clearBackpack() {
-    for (const slot in BACKPACK) {
-      this.inventory.push(null);
+    for (const slotId in SLOTS.BACKPACK) {
+      this.inventory[slotId] = null;
     }
   }
 }
